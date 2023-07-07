@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+body * {
+    box-sizing: border-box;
+}
+.main-login{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-login{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left-login > h1{
+    color: black;
+    font-family: 'Zen Dots', cursive;
+    font-size: 4vw;
+}
+.left-login-image{
+    margin: 50px;
+    width: 15vw;
+}
+.frase-fintech{
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    font-style: italic;
+    margin: 15px 0px 0px 30px;
+}
+.right-login{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.e-senha{
+    color: #ffffff;
+    margin: 5px;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+}
+.link-cadastro{
+    color: #ffffff;
+    margin: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px ;
+    background-color: #b4bec5;
+    border-radius: 20px;
+    box-shadow: 0px 1px 15px ;
+    justify-content: space-evenly;
+}
+.card-login > h1{
+    color: #ffffff;
+    font-weight: 900;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.textfield{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    font-weight: 500;
+    font-size: 20px;
+}
+button{
+    margin: 10px;
+    width: 50%;
+}
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color:white;
+    color: black;
+    font-size: 12pt;
+    box-shadow: 0px 1px 15px #111827;
+    outline: none;
+    box-sizing: border-box;
+}
+.textfield > label{
+    color:whitesmoke;
+    margin-bottom: 10px;   
+}
+.textfield > input ::placeholder{
+    color: black;
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+}
+@media only screen and (max-width:600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1{
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-login-image{
+        width: 18vh;
+    }
+    .card-login{
+        width: 90%;
+    }
+}
